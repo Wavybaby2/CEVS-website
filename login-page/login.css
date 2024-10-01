@@ -1,0 +1,136 @@
+body{
+    font-family: Verdana;
+    margin: 0px;
+}
+/*navbar*/
+header{
+    height: 66px;
+    width: 100%;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+header .logo{
+    
+    height: inherit;
+    margin-left: 2em;
+
+}
+
+header .logo-text{
+    margin: 9px;
+}
+
+header .logo-text span{
+    color: rgb(31, 89, 31);
+    font-family: Georgia, Times;
+}
+
+header ul{
+    background-color: rgb(102, 102, 240);
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    margin-right: 10px;
+}
+.showing{
+    max-height: 100em;
+}
+
+header ul li{
+    float: left;
+    position: relative;
+}
+
+header ul li a{
+    display: block;
+    padding: 21px;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+
+header ul li ul {
+    position: absolute;
+    top: 66px;
+    right: 0px; 
+    display: none;  
+}
+
+
+
+
+header .menu-toggle{
+    display: none;
+    
+}
+   
+header *{
+    color: aliceblue;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgb(102, 102, 240);
+    width: 30%;
+    border-radius: 5px;
+}
+.logo:hover{
+    background-color: rgb(88, 88, 249);
+    width: 30%;
+   
+}
+/*logo image*/
+.image{
+    height: 70%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+    /*Auth Page*/
+.auth-content{
+    width: 30%;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgb(64, 63, 63);
+    color: white;
+    border-radius: 5px;
+}
+
+.auth-content form div{
+    margin-bottom: 10px;
+}
+.auth-content .form-title{
+    text-align: center;
+}
+
+.text-input {
+    padding: .7rem 1rem;
+    display: block;
+    width: 90%;
+    border-radius: 5px;
+    outline: none;
+    color: gray;
+    line-height: 1.5rem;
+    font-family: 'Courier New';
+    border: 1px solid rgb(224, 223, 223);
+    font-size: 1.2em;
+}
+.btn{
+    padding: 11px 35px;
+    border-radius: 7px;
+    font-size: 1.5rem;
+    border: none;
+    margin-left: 5px;
+}
+
+.auth-content p a{
+    color: black;
+    font-size: 1.1rem;
+}

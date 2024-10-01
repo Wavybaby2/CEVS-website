@@ -1,0 +1,139 @@
+body{
+    font-family: Verdana;
+    margin: 0px;
+}
+/*navbar*/
+header{
+    height: 66px;
+    width: 100%;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+header .logo{
+    
+    height: inherit;
+    margin-left: 2em;
+
+}
+
+header .logo-text{
+    margin: 9px;
+}
+
+header .logo-text span{
+    color: rgb(31, 89, 31);
+    font-family: Georgia, Times;
+}
+
+header ul{
+    background-color: rgb(102, 102, 240);
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    margin-right: 10px;
+}
+.showing{
+    max-height: 100em;
+}
+
+header ul li{
+    float: left;
+    position: relative;
+}
+
+header ul li a{
+    display: block;
+    padding: 21px;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+
+header ul li ul {
+    position: absolute;
+    top: 66px;
+    right: 0px; 
+    display: none;  
+}
+
+
+
+
+header .menu-toggle{
+    display: none;
+    
+}
+   
+header *{
+    color: aliceblue;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgb(102, 102, 240);
+    width: 30%;
+    border-radius: 5px;
+}
+.logo:hover{
+    background-color: rgb(88, 88, 249);
+    width: 30%;
+   
+}
+/*logo image*/
+.image{
+    height: 70%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Main Content*/
+.head {
+    margin-left: 25px;
+    margin-right: 30px;
+    overflow: hidden;
+    width: 80%;
+  }
+  .body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 4px;
+    width: 100%;
+    row-gap: 55px;
+    margin-top: 32px;
+    margin-right: 0px;
+    background: white;
+    overflow: hidden;
+    padding-top: 25px;
+    box-shadow: 1.5rem 1.5rem 1.5rem -1.5rem gray;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+   
+  }
+
+  .try {
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+ 
+  .ftb {
+    width: 300px;
+    transition: transform 0.5s;
+    transform: translate(0px);
+    border-top-left-radius: 30px;
+    height: 180px;
+  }
+  .ftb:hover {
+    transform: scale(1.05);
+    transition: transform 0.4s;
+  }
+  .channel-two {
+    width: 40px;
+    border-radius: 20px;
+  }
