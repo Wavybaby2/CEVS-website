@@ -1,0 +1,107 @@
+body{
+    font-family: Verdana;
+    margin: 0px;
+}
+/*navbar*/
+header{
+    background-color: rgb(198, 197, 197);
+    height: 66px;
+    width: 100%;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+header .logo{
+    
+    height: inherit;
+    margin-left: 2em;
+
+}
+
+header .logo-text{
+    margin: 9px;
+}
+
+header .logo-text span{
+    color: rgb(31, 89, 31);
+    font-family: Georgia, Times;
+}
+
+header ul{
+   
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+
+}
+.showing{
+    max-height: 100em;
+}
+
+header ul li{
+    float: left;
+    position: relative;
+}
+
+header ul li a{
+    display: block;
+    padding: 21px;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+
+header ul li ul {
+    position: absolute;
+    top: 66px;
+    right: 0px; 
+    display: none;  
+}
+
+header ul li:hover ul{
+    display: block;
+}
+
+header ul li ul li{
+    width: 100%;
+}
+
+
+header .menu-toggle{
+    display: none;
+    
+}
+   
+header *{
+    color: white;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.logo:hover{
+    background-color: rgb(228, 228, 228);
+    width: 20%;
+    margin-left: 0px;
+}
+/*logo image*/
+.image{
+    height: 70%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/*header content after navbar*/
+
+.content{
+    background-color: black;
+    color: gray;
+   width: 100%;
+   height: 170px;
+   margin-top: 0px;
+}
