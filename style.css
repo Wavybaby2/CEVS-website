@@ -4,7 +4,6 @@ body{
 }
 /*navbar*/
 header{
-    background-color: rgb(198, 197, 197);
     height: 66px;
     width: 100%;
     margin-bottom: 0px;
@@ -75,7 +74,7 @@ header .menu-toggle{
 }
    
 header *{
-    color: white;
+    color: black;
 }
 .logo{
     display: flex;
@@ -100,8 +99,18 @@ header *{
 
 .content{
     background-color: black;
-    color: gray;
-   width: 100%;
+   color: white;
+   width: 95%;
+   justify-content: center;
+   align-items: center;
+   border-radius: 10px;
    height: 170px;
    margin-top: 0px;
+   margin-left: 30px;
+}
+
+.text-content{
+    align-items: center;
+    text-align: center;
+    padding-top: 10px;
 }
