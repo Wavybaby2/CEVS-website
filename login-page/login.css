@@ -63,48 +63,6 @@ a.active,a:hover{
     display: none;
 }
 
-@media (max-width: 952px){
-    label.logo{
-        font-size: 30px;
-        padding-left: 50px;
-    }
-    nav ul li a{
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 858px){
-   .checkbtn{
-    display: block;
-   }
-
-   ul{
-    position: fixed;
-    width: 30%;
-    z-index: 3;
-    height: 100%;
-    background: #2c3e50;
-    top: 80px;
-    left: -100%;
-    text-align: center;
-    transition: all .5s;
-   }
-   nav ul li{
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-   }
-   nav ul li a{
-    font-size: 20px;
-   }
-   a:hover,a.active{
-    background: none;
-    color: navy;
-   }
-   #check:checked ~ ul{
-    left: 0;
-   }
-}
 /*logo image*/
 .logo-img{
     height: 70%;
@@ -154,4 +112,84 @@ a.active,a:hover{
 .auth-content p a{
     color: black;
     font-size: 1.1rem;
+}
+
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }   .auth-content{
+        width: 65%;
+       }
+       .auth-content form{
+        width: 100%;
+       }
+       .text-input {
+        padding: .7rem 1rem;
+        display: block;
+        width: 90%;
+        font-size: 1em;
+    }
+    .btn{
+        padding: 7px 25px;
+        border-radius: 7px;
+        font-size: 1.5rem;
+        border: none;
+        margin-left: 5px;
+    }
+}
+
+@media (max-width: 858px){
+   .checkbtn{
+    display: block;
+   }
+
+   ul{
+    position: fixed;
+    width: 30%;
+    z-index: 3;
+    height: 100%;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+   }
+   nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+   }
+   nav ul li a{
+    font-size: 20px;
+   }
+   a:hover,a.active{
+    background: none;
+    color: navy;
+   }
+   #check:checked ~ ul{
+    left: 0;
+   }
+   .auth-content{
+    width: 80%;
+   }
+   .auth-content form{
+    width: 100%;
+   }
+   .text-input {
+    padding: .7rem 1rem;
+    display: block;
+    width: 90%;
+    font-size: 1em;
+}
+.btn{
+    padding: 7px 25px;
+    border-radius: 7px;
+    font-size: 1.5rem;
+    border: none;
+    margin-left: 5px;
+}
 }
