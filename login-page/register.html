@@ -32,23 +32,28 @@
         <h2 class="form-title">Register</h2>
       
         <div>
-            <label>Username</label>
-            <input type="text" class="text-input" name="Username">
+            
         </div>
         <div>
             <label>Username</label>
-            <input type="email" class="text-input" name="username">
+            <input type="text" class="text-input" name="Username" minlength="5" required>
+            <p>required</p>
+            <label>Email</label>
+            <input type="email" class="text-input" placeholder="Your email" name="username" required>
+            <p>required</p>
         </div>
         <div>
             <label>Password</label>
-            <input type="password" class="text-input" name="Password">
-        
+            <input type="password" class="text-input" placeholder="Your password" name="Password" minlength="6" required>
+            <p>required</p>
         <label>Confirm Password</label>
-        <input type="password" class="text-input" name="PasswordConf">
+        <input type="password" class="text-input" placeholder="Your password" name="PasswordConf" minlength="6" required>
+        <p>Password must be atleast 6 characters</p>
+        
+            <button type="submit" class="btn btn-big" style="margin-top: 10px;"><a href="dashboard.html">Register</a></button>
+        
     </div>
-         <div>
-        <button type="submit" class="btn btn-big" style="margin-top: 10px;">Register</button>
-    </div>
+        
     <p>Or <a href="login.html">Sign In</a></p>
     </div>
    

@@ -1,6 +1,7 @@
 body{
     font-family: Verdana;
     margin: 0px;
+    background:whitesmoke;
 }
 
 /*navbar*/
@@ -77,9 +78,10 @@ a.active,a:hover{
     width: 30%;
     margin: 50px auto;
     padding: 20px;
-    background: rgb(64, 63, 63);
-    color: white;
+    background: white;
+    color: black;
     border-radius: 5px;
+    box-shadow: 0 0 10px black;
 }
 
 .auth-content form div{
@@ -95,11 +97,41 @@ a.active,a:hover{
     width: 90%;
     border-radius: 5px;
     outline: none;
-    color: gray;
+    color: black;
     line-height: 1.5rem;
-    font-family: 'Courier New';
+    font-size: 1.3rem;
+    font-family: Verdana;
     border: 1px solid rgb(224, 223, 223);
     font-size: 1.2em;
+}
+
+.text-input::placeholder{
+    color: gray;
+    font-size: .7rem;
+}
+input:invalid:not(:placeholder-shown){
+    border-color: red;
+    background-image: url(red\ done.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: calc(98%);
+}
+input:valid:not(:placeholder-shown){
+    border-color: rgb(83, 229, 83);
+    background-image: url(done\ -\ Copy.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: calc(98%);
+}
+input:invalid + p{
+    color: red;
+}
+input:valid:not(:placeholder-shown) + p{
+    display: none;
+}
+input:invalid ~ button[type="submit"]{
+    opacity: .6;
+    pointer-events: none;
 }
 .btn{
     padding: 11px 35px;

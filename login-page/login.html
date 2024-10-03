@@ -28,19 +28,24 @@
 <div class="auth-content">
     <form action="login.html" method="post">
         <h2 class="form-title">Login</h2>
-        <div>
-            <label>Username</label>
-            <input type="text" class="text-input" name="Username">
-        </div>
+    
+          
+
+        
        
         <div>
+            <label>Username</label>
+            <input type="text" class="text-input" name="Username" minlength="5">
+            <p>required</p>
             <label>Password</label>
-            <input type="password" class="text-input" name="Password">
+            <input type="password" class="text-input" name="Password" minlength="6" required>
+            <p>required</p>
+            <button type="submit" name="login-btn" class="btn btn-big" style="margin-top: 10px;"><a href="dashboard.html">Login</a></button>
         </div>
         
-         <div>
-        <button type="submit" name="login-btn" class="btn btn-big" style="margin-top: 10px;">Login</button>
-    </div>
+       
+       
+   
     <p>Or <a href="register.html">Sign Up</a></p>
     </div>
    
