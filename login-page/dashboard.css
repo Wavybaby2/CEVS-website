@@ -83,6 +83,7 @@ aside{
 aside .top{
     background-color: violet;
     display: flex;
+    height: 65px;
     justify-content: space-around;
     align-items: center;
     margin-top: 1.4rem;
@@ -99,16 +100,94 @@ aside .top div.close{
 /*Sidebar*/
 
 aside .sidebar{
-    background-color: blue;
+    background-color: rgb(5, 74, 5);
     display: flex;
     flex-direction: column;
     height: 85vh;
-    gap: 30px;
+    gap: 20px;
+    line-height: 4;
     position: relative;
     top: 1rem;
+    padding-top: 32px;
+    color: black;
+    cursor: pointer;
 }
 
 aside .h3{
     font-weight: 500;
 }
-side
+.side-content{
+    display: flex;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.side-content .icons{
+    color: black;
+    height: 30px;
+    width: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+/*main Content*/
+main{
+    margin-top: 20px;
+}
+main h1{
+    justify-content: center;
+    text-align: center;
+}
+.vid{
+    width: 70%;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.vid-container{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.right{
+    margin-top: 20px;
+    background-color: bisque;
+}
+
+
+.right-section{
+    height: 80vh;
+    margin-top: 22px;
+}
+
+.right-section-content{
+    font-size: .9rem;
+    color: black;
+    text-decoration: none;
+    list-style: none;
+    line-height: 5;
+    align-items: center;
+    text-align: center;
+}
+
+.right-section-content a{
+    font-size: 1.3rem;
+    color: black;
+    transition: ease-in-out 0.45s all;
+}
+
+.right-section-content a:hover{
+    transition: ease-in-out 0.5s all;
+    background-color: blue;
+    border-radius: 10px;
+    padding: 5px 15px; 
+}
+
+.right h1{
+    text-align: center;
+}

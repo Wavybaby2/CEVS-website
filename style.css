@@ -59,10 +59,11 @@ a.active,a:hover{
 
 /*logo image*/
 .logo-img{
-    height: 50%;
     text-align: center;
     justify-content: center;
     align-items: center;
+    border-radius: 50%;
+    height: 70%;
 }
 /*header content after navbar*/
 

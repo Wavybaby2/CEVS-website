@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>New to pay</h1>
+    <h2>Using Local storage</h2>
+
+
+    <form action="settings.html">
+    <input type="text" id="text">
+    <input type="submit" value="check" onclick="passvalues()">
+</form>
+
+    <script>
+        function passvalues() {
+            let firstname =document.getElementById("text").value;
+            localStorage.setItem("textvalue", firstname);
+            return false;
+        }
+    </script>
+</body>
+</html>
